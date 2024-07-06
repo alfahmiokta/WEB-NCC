@@ -1,0 +1,203 @@
+/* Style untuk judul halaman */
+.title::after {
+    content: attr(data-title);
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Warna teks judul */
+    margin-top: 50px;
+}
+/* Gaya untuk elemen container */
+.container {
+    max-width: 8000px; /* Lebar maksimum container */
+    margin: 0 auto; /* Pusatkan container */
+    padding: 20px; /* Padding untuk ruang di sekitar konten */
+}
+/* Gaya untuk container */
+.container {
+    display: flex; /* Menggunakan flexbox */
+    justify-content:left; /* Membuat konten berada di tengah */
+    align-items:left; /* Mengatur penempatan vertikal ke tengah */
+}
+
+/* Gaya untuk logo */
+.logo {
+    float: left; /* Membuat logo berada di sebelah kiri */
+    margin-right: 700px; /* Jarak antara logo dan konten lainnya */
+    max-width: 200px; /* Menentukan lebar maksimum logo */
+    height: auto; /* Menyesuaikan tinggi secara otomatis */
+}
+/* Gaya untuk navigasi */
+nav {
+    margin-top: 10px; /* Jarak antara logo dan navigasi */
+}
+
+/* Gaya untuk daftar navigasi */
+nav ul {
+    list-style-type: none; /* Hapus bullet point dari daftar */
+    padding: 0; /* Hapus padding default */
+    margin: 0; /* Hapus margin default */
+    display: flex; /* Menggunakan flexbox */
+}
+
+
+/* Gaya untuk setiap elemen daftar navigasi */
+nav ul li {
+    margin-right: 20px;
+}
+
+
+/* Gaya untuk tautan navigasi */
+nav ul li a {
+    text-decoration: none; /* Hapus dekorasi tautan */
+    color: #333; /* Warna teks tautan */
+    font-weight: bold; /* Tebal teks tautan */
+    padding: 10px;
+}
+
+/* Gaya untuk dropdown */
+.dropdown {
+    position: relative; /* Posisi relatif */
+}
+
+/* Gaya untuk dropdown konten */
+.dropdown-content {
+    display: none; /* Sembunyikan konten dropdown secara default */
+    position: absolute; /* Posisi absolut */
+    background-color: #f32b2b; /* Warna latar belakang */
+    min-width: 160px; /* Lebar minimum konten dropdown */
+    box-shadow: 0 8px 16px 0 rgba(235, 44, 44, 0.2); /* Efek bayangan */
+    z-index: 1; /* Z-index untuk menampilkan di atas elemen lain */
+    padding: 10px;
+}
+
+/* Gaya untuk tautan di dalam dropdown */
+.dropdown-content a {
+    color: rgb(230, 214, 214); /* Warna teks */
+    padding: 12px 16px; /* Padding tautan */
+    display: block; /* Tampilkan tautan sebagai blok */
+    padding: 5px 0;
+}
+
+/* Gaya hover untuk dropdown */
+.dropdown:hover .dropdown-content {
+    display: block; /* Tampilkan konten dropdown saat dihover */
+}
+/* Gaya untuk tautan aktif */
+.active {
+    background-color: #1d1515;
+    color: rgb(230, 22, 22);
+}
+/* Gaya untuk bagian misi, visi, dan tujuan */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vision-box {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.vision-box h3 {
+    color: #333;
+}
+
+.vision-box p {
+    color: #666;
+}
+
+.about-image {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+/* Gaya untuk bagian profil */
+#profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#profil p {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#profil a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#profil a:hover {
+    color: #0056b3;
+}
+/* Gaya untuk bagian update */
+#update {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#update h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#update p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#update img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#update li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+#update ul, #update ol {
+    margin-left: 20px;
+}
+
+#update a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#update a:hover {
+    color: #0056b3;
+}
+video {
+    width: 20%; /* Menjadikan video responsif sesuai lebar container */
+    height: auto; /* Menyesuaikan tinggi sesuai proporsi aspek */
+    margin-top: 10px; /* Menambahkan jarak atas */
+    margin-bottom: 10px; /* Menambahkan jarak bawah */
+}
+/* Warna latar belakang */
+body {
+    background-color: #f11b1b; /* Ganti dengan warna latar belakang yang diinginkan */
+}
+
